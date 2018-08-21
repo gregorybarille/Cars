@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel static/components/index.jsx -o static/components/index.js -s & babel static/components/app.jsx -o static/components/app.js -s",
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "build": "webpack --watch",
+    "start": "webpack-serve"
   },
   "author": "",
   "license": "",
@@ -19,9 +18,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-serve": "^2.0.2"
   }
 }

@@ -1,5 +1,6 @@
 module.exports = {
 	mode: 'development',
+	devtool: "source-map",
 	entry: __dirname + '/src/components/index.jsx',
 	module: {
 		rules: [
@@ -11,7 +12,7 @@ module.exports = {
 		]
 	},
 	output:{
-		filename: 'transformed.js',
+		filename: 'build.js',
 		path: __dirname + '/src/build'
 }
 };
